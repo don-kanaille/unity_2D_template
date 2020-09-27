@@ -22,10 +22,10 @@ public class PlayerInputController : MonoBehaviour
 
         else if (Input.GetAxisRaw("Vertical") > 0f)
             player.change.y = 1;
-
+        /*
         else if (Input.GetAxisRaw("Vertical") < 0f)
             player.change.y = -1;
-        /*
+        
         else if (Input.GetAxisRaw("Fire1") > 0f)
             player.performAction();
         */     

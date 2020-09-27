@@ -79,8 +79,8 @@ public class TheGameObject : MonoBehaviour
     private void LateUpdate()
     {
         anim.SetFloat("change_x", change.x);
-        anim.SetFloat("change_y", change.y);
-
+        //anim.SetFloat("change_y", change.y);
+        /*
         if (change.y <= -1f) 
         {
             anim.SetFloat("lookAt", 0f);
@@ -93,7 +93,7 @@ public class TheGameObject : MonoBehaviour
         } else if (change.x >= 1f) 
         {
             anim.SetFloat("lookAt", 3f);
-        }
+        }*/
 
         float step = roundToPixelGrid(1f * Time.deltaTime);
         Vector3 oldPos = transform.position;
