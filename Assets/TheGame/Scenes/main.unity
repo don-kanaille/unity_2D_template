@@ -136,7 +136,8 @@ GameObject:
   - component: {fileID: 59275280}
   - component: {fileID: 59275278}
   - component: {fileID: 59275279}
-  m_Layer: 0
+  - component: {fileID: 59275281}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +240,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 59275273}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 010b2261529cbf344b0c990b473ab430, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -287,13 +288,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5dcabb7418c0e4b8c3681ed42129d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 700
+  m_JumpForce: 500
   m_CrouchSpeed: 0.4
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_GroundCheck: {fileID: 1636389961}
   m_CeilingCheck: {fileID: 1997959418}
   m_CrouchDisableCollider: {fileID: 0}
@@ -319,6 +320,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.27}
   serializedVersion: 2
   m_Radius: 0.23
+--- !u!114 &59275281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59275273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4293322b06676544ab32aca10b0905f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 59275279}
+  runSpeed: 60
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,7 +917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636389961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1290,7 +1305,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1916080510}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 010b2261529cbf344b0c990b473ab430, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1306,7 +1321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1997959418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ceiling-check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
