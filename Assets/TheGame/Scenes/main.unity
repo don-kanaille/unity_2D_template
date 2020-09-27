@@ -297,7 +297,7 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 1636389961}
   m_CeilingCheck: {fileID: 1997959418}
-  m_CrouchDisableCollider: {fileID: 0}
+  m_CrouchDisableCollider: {fileID: 59275277}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 59275279}
-  runSpeed: 60
+  runSpeed: 40
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,7 +1305,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 1916080510}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 010b2261529cbf344b0c990b473ab430, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
