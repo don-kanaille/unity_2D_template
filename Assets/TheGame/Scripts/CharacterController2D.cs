@@ -56,6 +56,7 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+				// if (!wasGrounded) hat nicht funktioniert!
 				if (wasGrounded)
 					OnLandEvent.Invoke();
 			}
